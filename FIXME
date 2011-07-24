@@ -1,0 +1,2 @@
+* come up with a name that's not "NERITIC VIDEO GAMES"
+* consider making the game install its modules into "/usr/share/" or "Program Files\Neritic Game", cluttering the global modules dir isn't very sensible
