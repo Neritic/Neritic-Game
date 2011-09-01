@@ -1,0 +1,5 @@
+// ramblings file, ramble about your code here
+Cheeseum:
+    it's probably REALLY bad practice to put test/example code in the package but
+    for now neritic_game.test is just for mangling while the layout of the engine is decided
+    filled with halfassed systems and hacked code (see TestSceneRenderer) for things that don't exist

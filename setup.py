@@ -6,7 +6,6 @@ setup(
     long_description = '''Neritic Net makes VIDEO GAMES in the form of a Metroid/Castlevania hybrid using SFML.''',
     version = '0.1.0',
 
-    package_dir = {'': 'src'},
     packages = ['neritic_game'],
-    scripts=['src/Neritic-Game']
+    scripts=['Neritic-Game']
     )
