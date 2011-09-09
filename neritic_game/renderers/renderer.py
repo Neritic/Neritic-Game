@@ -11,6 +11,7 @@ class Renderer (object):
         pass
 
 #FIXME: this might make more sense in generic.py
+#FIXME: who was material?
 class EntityRenderer (Renderer):
     ''' renders a game entity '''
     
@@ -26,6 +27,7 @@ class EntityRenderer (Renderer):
         pass
 
 #FIXME: does this belong here?
+#FIXME: moreover does it need to subclass renderer?
 class SceneRenderer (Renderer):
     ''' 
         manages and renders the game scene 
@@ -35,5 +37,5 @@ class SceneRenderer (Renderer):
     def __init__ (self, world):
         self.world = world
 
-    def render (self, rendertarget):
+    def render (self, rendertarget): 
         pass

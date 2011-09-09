@@ -7,7 +7,7 @@ So far all the "game" does is draw a 640x480 window with white.
 * SFML 2
 
 ## Building and Installing
-`python setup.py build`
+`python setup.py build`  
 `python setup.py install`
 
 ## Notes
