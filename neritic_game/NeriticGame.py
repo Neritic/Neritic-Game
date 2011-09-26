@@ -3,7 +3,11 @@ import time
 
 import sf
 
-class Main:
+import neritic_game.renderers
+import neritic_game.resourcemanager
+import neritic_game.world
+
+class Game:
     def __init__ (self):
         self.title = 'Neritic Game'
         self.video_mode = sf.VideoMode(640, 480, 32)
@@ -14,6 +18,14 @@ class Main:
 
         self.window = sf.RenderWindow(self.video_mode, self.title, sf.Style.CLOSE)
         self.window.framerate_limit = 60
+
+        world = neritic_game.world.World()
+        scene = neritic_game.renderers.SceneRenderer(world)
+
+        resourcemanager = neritic_game.resourcemanager.ResourceManager()
+        # add resources here
+        
+        world.load()
 
         # physics time variables
         t = 0.0
@@ -36,11 +48,12 @@ class Main:
             accumulator += deltatime
             while accumulator >= dt:
                 accumulator -= dt
-                # do physics here
+                world.update(t, dt)
                 t += dt
 
             # display update
             self.window.clear(sf.Color.WHITE)
+            scene.render(self.window)
             self.window.display()
 
             t += dt

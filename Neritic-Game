@@ -3,7 +3,7 @@
 from neritic_game import NeriticGame
 
 def main ():
-    game = NeriticGame.Main()
+    game = NeriticGame.Game()
     game.run()
 
 if __name__ == "__main__":
